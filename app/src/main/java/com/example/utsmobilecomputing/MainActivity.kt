@@ -63,7 +63,7 @@ fun MyApp() {
         Card(
             modifier = Modifier
                 .width(200.dp)
-                .height(270.dp),
+                .height(260.dp),
             elevation = CardDefaults.cardElevation(10.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
         ) {
@@ -71,7 +71,9 @@ fun MyApp() {
                 Image(
                     painter = painterResource(id = R.drawable.universitas_negeri_jakarta_logo),
                     contentDescription = "Logo of Jakarta State University",
-                    modifier = Modifier.fillMaxWidth().padding(top = 10.dp)
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 10.dp)
                 )
                 Text(
                     text = "Title",
@@ -80,7 +82,7 @@ fun MyApp() {
                     modifier = Modifier.padding(10.dp)
                 )
                 Text(
-                    text = "Description",
+                    text = "SKS",
                     fontSize = 14.sp,
                     modifier = Modifier.padding(10.dp),
                     color = Color.DarkGray
