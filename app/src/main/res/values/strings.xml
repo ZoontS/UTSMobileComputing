@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">UTS Mobile Computing</string>
     <string name="mom">Hi mom!</string>
+    <string name="matkul1">Kalkulus Diferensial</string>
+    <string name="sks1">3 SKS</string>
+    <string name="matkul2">Statistika dan Probabilitas</string>
+    <string name="sks2">3 SKS</string>
+    <string name="matkul3">Pengantar TIK</string>
+    <string name="sks3">2 SKS</string>
+    <string name="matkul4">Pengantar Teori Graph</string>
+    <string name="sks4">3 SKS</string>
+    <string name="matkul5">Olimpisme</string>
+    <string name="sks5">1 SKS</string>
+    <string name="matkul6">Komputer Grafik</string>
+    <string name="sks6">3 SKS</string>
+    <string name="matkul7">Basis Data</string>
+    <string name="sks7">3 SKS</string>
+    <string name="matkul8">Teori Informasi</string>
+    <string name="sks8">3 SKS</string>
+    <string name="matkul9">Wawasan Pendidikan</string>
+    <string name="sks9">2 SKS</string>
+    <string name="matkul10">Pemrograman Deklaratif</string>
+    <string name="sks10">3 SKS</string>
 </resources>
