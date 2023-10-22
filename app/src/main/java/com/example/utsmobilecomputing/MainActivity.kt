@@ -15,24 +15,17 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.rememberTopAppBarState
-import androidx.compose.material3.CenterAlignedTopAppBar
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.NavigationBarDefaults.containerColor
-import androidx.compose.material3.TopAppBarColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.utsmobilecomputing.model.Matkul
@@ -49,9 +42,13 @@ class MainActivity : ComponentActivity() {
                 }
                 matkulAmount = i
             }
-            val matkulList = List(matkulAmount) {index ->
+            val matkulList = List(matkulAmount) { index ->
                 Matkul(
-                    matkulRes = resources.getIdentifier("matkul${index + 1}", "string", packageName),
+                    matkulRes = resources.getIdentifier(
+                        "matkul${index + 1}",
+                        "string",
+                        packageName
+                    ),
                     sksRes = resources.getIdentifier("sks${index + 1}", "string", packageName),
                     logoRes = resources.getIdentifier("logo${index + 1}", "drawable", packageName)
                 )
@@ -126,8 +123,6 @@ fun MatkulCard(matkul: Matkul) {
         }
     }
 }
-
-
 
 //@Preview(showBackground = true)
 //@Composable
